@@ -1,0 +1,35 @@
+<div class="service-wrapper">
+  <div id="form-wrapper">
+    <form (ngSubmit)="onSubmit()">
+      <h1>Service choice</h1>
+      <div>
+        <input type="text" name="name" placeholder="First and Last Name">
+      </div>
+      <div>
+        <input type="text"  name="email" placeholder="Your Email">
+      </div>
+      <div>
+        <input type="text"  name="number" placeholder="Phone Number">
+      </div>
+      <div>
+        <input type="text"  name="address" placeholder="Address">
+      </div>
+      <div>
+        <input type="text"  name="service" placeholder="Service(s)">
+      </div>
+      <div>
+        <input type="text"  name="card" placeholder="Card Number">
+      </div>
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="instructions-wrapper">
+    <p> 1. Fill Out Your Name and Contact Info</p>
+    <p> 2. Input your Full Address </p>
+    <p> 3. Choose from our four services: Side Walk and Doorway Cleaning,
+            Driveway Cleaning, Patio Cleaning, Roof Cleaning (Each service costs $60)
+    </p>
+    <p> 4. Hit Submit and pay when one of our workers finishes the job</p>
+  </div>
+</div>

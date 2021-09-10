@@ -1,0 +1,37 @@
+<div [hidden]="submitted" class="contact">
+  <h1> Get In Touch </h1>
+  <hr>
+    <div id="info">
+        <p> Please fill out the form and we will get back to you as soon as possible! </p>
+        <form (ngSubmit)="onSubmit()">
+          <h1>Service choice</h1>
+          <div>
+            <input type="text" name="name" placeholder="First and Last Name">
+          </div>
+          <div>
+            <input type="text"  name="email" placeholder="Your Email">
+          </div>
+          <div>
+            <input type="text"  name="message" placeholder="Message">
+          </div>
+          <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="info2">
+      <h2>Email: </h2>
+      <a href="mailto:plowsrusinc.gmail.com"><p>plowsrusinc@gmail.com</p></a>
+      <!-- <hr> -->
+      <div class = "sm-logo-wrapper">
+        <a href="https://twitter.com/PlowsUs"><img class = "social-media-logos" src="../../assets/img/twitter.svg"></a>
+        <a href="https://www.instagram.com/plowsrus/?hl=en"><img class = "social-media-logos" src="../../assets/img/instagram.svg"></a>
+        <a href="https://www.linkedin.com/in/plows-r-us-inc-8161ab199"><img class = "social-media-logos" src="../../assets/img/linked_in.svg"></a>
+      </div>
+    </div>
+</div>
+<div [hidden]="!submitted" class="submit-info-wrapper">
+    <div>
+        <!-- <h2>Thank you for submitting!</h2> -->
+    </div>
+  </div>
+<app-footer></app-footer>
+

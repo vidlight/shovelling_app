@@ -1,0 +1,33 @@
+.contact {
+  background-color: lightblue;
+  color: darkslategray;
+  padding: 15px;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
+  height: 90%;
+  border-radius: 10px;
+}
+h1 {
+  color: darkslategray;
+}
+p {
+  color: darkslategray;
+}
+#info {
+  width: 75%;
+  display: block;
+  float: left;
+ }
+ #info2 {
+   width: 25%;
+   display: block;
+   float: right;
+ }
+ .sm-logo-wrapper{
+  display: inline-block;
+}
+.social-media-logos{
+  width: 20%;
+  margin: 1%;
+}

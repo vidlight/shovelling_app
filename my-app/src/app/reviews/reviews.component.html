@@ -1,0 +1,63 @@
+<div class="wrapper">
+  <div [hidden]="submitted" class="form-wrapper">
+      <form (ngSubmit)="onSubmit()">
+        <h1> Customer Review Form</h1>
+        <br>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="service"> Type of Service</label>
+          <select class="form-control" required [(ngModel)]="model.service" name="service">
+            <option *ngFor="let option of service"> {{option}}</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="rating">Rating of Service <i>(1-5)</i></label>
+          <select class="form-control"  id="rating" required [(ngModel)]="model.rating" name="rating">
+          <option *ngFor="let num of rating" [value]="num">{{num}}</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="comments">Comments</label>
+          <input type="text" class="form-control" id="comments" required [(ngModel)]="model.comments" name="comments">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+
+      </form>
+    </div>
+    <div class="fake-review-wrapper">
+      <div>
+        <h2> Doe John </h2><br>
+        <p>
+          Service: Driveway Cleaning <br>
+          Rating: 4 <br>
+          Comments: The service was great. The person from Plow's R Us was really friendly and listened to
+          any suggestions we had. the only negative part of my experience was the arrival time of the driver.
+          It must have been a busy day because he showed up 20 mins late.
+        </p><br>
+      </div>
+      <div>
+        <h2> Mary Jane </h2><br>
+        <p>
+          Service: Patio Cleaning <br>
+          Rating: 5 <br>
+          Comments: Anyone looking for a snow removal service should definitely try out Plows R Us. They did
+          a great job cleaning my patio and I could not be happier with their service.
+        </p>
+      </div><br>
+      <div [hidden]="!submitted">
+            <h2>{{ model.name }} </h2><br>
+            <p> Service: {{ model.service }} </p>
+            <p> Rating: {{ model.rating }} </p>
+            <p> Comments: {{ model.comments }} </p><br>
+            <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+        </div>
+      </div>
+  </div>
+  <app-footer></app-footer>

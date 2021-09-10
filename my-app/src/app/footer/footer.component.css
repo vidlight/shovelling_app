@@ -1,0 +1,19 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.sm-logo-wrapper{
+  display: inline-block;
+}
+.social-media-logos{
+  width: 6%;
+  margin: 0%;
+}
+.slogan-wrapper{
+display: inline-block;
+}
+#slogan{
+  color: white;
+  font-size: 150%;
+}
+

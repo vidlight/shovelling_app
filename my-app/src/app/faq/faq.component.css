@@ -1,0 +1,25 @@
+#question {
+  margin: 3px;
+  color: darkslategray;
+}
+
+#answer {
+  margin: 0px;
+}
+
+.faq {
+  width: 700px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.faq h2, .faq p, .faq p b {
+  color: darkslategray;
+}
+
+h2 {
+  text-align: center;
+}

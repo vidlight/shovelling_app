@@ -1,0 +1,35 @@
+<div class="forms-wrapper">
+<form [hidden]="signInCheck" (submit)="addUser()">
+  <h1> Sign Up</h1>
+  <div>
+    <label for="key">Username</label>
+    <input id="key" type="text" [(ngModel)]="key" name="username">
+  </div>
+
+  <div>
+    <label for="value">Password</label>
+    <input id="value" type="password" [(ngModel)]="value" name="password">
+  </div>
+
+  <button class="button" type="submit">Submit</button>
+</form>
+
+
+<form [hidden]="signInCheck" (submit)="checkUser()">
+  <h1> Sign In</h1>
+  <div>
+      <label for="key">Username</label>
+      <input id="key" type="text" [(ngModel)]="signInKey" name="username">
+  </div>
+
+  <div>
+      <label for="value">Password</label>
+      <input id="value" type="password" [(ngModel)]="signInValue" name="password">
+  </div>
+
+  <button class="button" type="submit">Submit</button>
+  </form>
+</div>
+
+
+  <app-footer></app-footer>

@@ -1,0 +1,27 @@
+.service-wrapper {
+  background-color: lightblue;
+  color: darkslategray;
+  padding: 15px;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
+  height: 90%;
+  border-radius: 10px;
+}
+h1 {
+  color: darkslategray;
+}
+p {
+  color: darkslategray;
+}
+#form-wrapper {
+  width: 75%;
+  display: block;
+  float: left;
+ }
+ #instructions-wrapper {
+   width: 25%;
+   display: block;
+   float: right;
+   margin: 10% 0;
+ }

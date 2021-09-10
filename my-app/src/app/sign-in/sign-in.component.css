@@ -1,0 +1,12 @@
+form{
+  background-color: lightblue;
+  width: 20%;
+  margin-top: 5%;
+  padding: 2% 7% 4% 4%;
+  border-radius: 10px;
+}
+.forms-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
